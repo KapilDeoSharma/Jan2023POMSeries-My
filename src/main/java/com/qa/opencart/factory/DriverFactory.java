@@ -25,6 +25,9 @@ public class DriverFactory {
 	
 	public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<WebDriver>();
 	
+	
+	/**** WebDriver Initialization Method *******/
+	
 	public WebDriver initDriver(Properties prop) {
 
 		String browserName = prop.getProperty("browser").toLowerCase().trim();
